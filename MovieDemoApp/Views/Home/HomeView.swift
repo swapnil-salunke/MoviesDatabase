@@ -9,8 +9,12 @@
 import SwiftUI
 
 struct HomeView: View {
+    var movieCategory: [MovieCategory] = MovieCategory.demoData
+
     var body: some View {
-        Text("Hello, World!")
+        VStack{
+            MovieCategorySelectionView(movieCategory: movieCategory)
+        }
     }
 }
 
