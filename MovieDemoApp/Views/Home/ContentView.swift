@@ -10,7 +10,13 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List( 0 ..< 2 ) {_ in
+                NavigationLink(destination: MovieDetailView()) {
+                    Text("Movie Detail Screen")
+                }
+            }
+        }
     }
 }
 
